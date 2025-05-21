@@ -1,0 +1,13 @@
+wandb==0.18.3
+tensorboardx
+qwen_vl_utils
+torchvision
+transformers==4.49.0
+duckdb
+opencv-python
+pandas
+math_verify==0.5.2
+datasets
+accelerate
+mathruler==0.1.0
+pylatexenc

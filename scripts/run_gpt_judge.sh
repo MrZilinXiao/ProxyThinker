@@ -1,0 +1,1 @@
+PYTHONPATH=./src:$PYTHONPATH python math_eval.py --precomputed_json [your_answer_file] --gpt_judge
