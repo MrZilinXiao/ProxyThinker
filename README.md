@@ -1,7 +1,11 @@
 ## ProxyThinker: Test-Time Guidance through Small Visual Reasoners
 
-This repository contains the code for the paper "ProxyThinker: Test-Time Guidance through Small Visual Reasoners" by Zilin Xiao, Jaywon Koo, Siru Ouyang, Jefferson Hernandez, Yu Meng and Vicente Ordonez. 
+<p align="center">
+  <a href="https://github.com/MrZilinXiao/ProxyThinker"><img src="https://img.shields.io/badge/🌐-Website-red" height="25"></a>
+  <a href="https://arxiv.org/abs/2505.24872"><img src="https://img.shields.io/badge/📝-Paper-blue" height="25"></a>
+</p>
 
+This repository contains the code for the paper "ProxyThinker: Test-Time Guidance through Small Visual Reasoners" by [Zilin Xiao](https://zilin.me/), [Jaywon Koo](https://jaywonkoo17.github.io/), [Siru Ouyang](https://ozyyshr.github.io/), [Jefferson Hernandez](https://www.linkedin.com/in/jefferson-hernandez-546a0b163/), [Yu Meng](https://yumeng5.github.io/) and [Vicente Ordonez](https://www.cs.rice.edu/~vo9/). 
 
 
 ### Installing vLLM
