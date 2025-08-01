@@ -10,7 +10,7 @@ This repository contains the code for the paper "ProxyThinker: Test-Time Guidanc
 
 ### Installing vLLM
 
-The core implementation of ProxyThinker is at `vllm_proxythinker/vllm/contrast_decode/contrast_decode_worker.py`. We build this based on the contrastive decoding implementation by [simonucl](https://github.com/simonucl/vllm/tree/contrastive-decoding). 
+The core implementation of ProxyThinker is at `vllm_proxythinker/vllm/contrast_decode/contrast_decode_worker.py`. 
 
 We highly recommend installing the vLLM implementation of ProxyThinker for better performance. To do so, please follow the instructions below:
 ```bash
@@ -55,3 +55,13 @@ PYTHONPATH=src/ python src/run_proxythinker.py \
 ```
 
 For more details, refer to `scripts` to see other examples of running ProxyThinker with different models and datasets.
+
+### Evaluation 
+
+Use `math_eval.py` to run rule-based evaluation or gpt-based evaluation (by setting `--gpt_judge`) on answer files.
+
+```bash
+PYTHONPATH=src/ python src/math_eval.py --precomputed_json results/mathverse-testmini/Qwen2.5-VL-32B-Instruct_bboxed.jsonl --gpt_judge
+```
+
+
