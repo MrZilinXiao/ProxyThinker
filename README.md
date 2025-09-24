@@ -1,22 +1,15 @@
 ## ProxyThinker: Test-Time Guidance through Small Visual Reasoners
 
-<p align="center">
-  <a href="https://github.com/MrZilinXiao/ProxyThinker"><img src="https://img.shields.io/badge/🌐-Website-red" height="25"></a>
-  <a href="https://arxiv.org/abs/2505.24872"><img src="https://img.shields.io/badge/📝-Paper-blue" height="25"></a>
-</p>
-
-This repository contains the code for the paper "ProxyThinker: Test-Time Guidance through Small Visual Reasoners" by [Zilin Xiao](https://zilin.me/), [Jaywon Koo](https://jaywonkoo17.github.io/), [Siru Ouyang](https://ozyyshr.github.io/), [Jefferson Hernandez](https://www.linkedin.com/in/jefferson-hernandez-546a0b163/), [Yu Meng](https://yumeng5.github.io/) and [Vicente Ordonez](https://www.cs.rice.edu/~vo9/). 
-
+This repository contains the code for the paper "ProxyThinker: Test-Time Guidance through Small Visual Reasoners".
 
 ### Installing vLLM
 
-The core implementation of ProxyThinker is at `vllm_proxythinker/vllm/contrast_decode/contrast_decode_worker.py`. 
+The core implementation of ProxyThinker is at `vllm_proxythinker/vllm/contrast_decode/contrast_decode_worker.py`.
 
 We highly recommend installing the vLLM implementation of ProxyThinker for better performance. To do so, please follow the instructions below:
 ```bash
 cd vllm_proxythinker
-export VLLM_PRECOMPILED_WHEEL_LOCATION=https://files.pythonhosted.org/packages/57/49/207364110b96d76139a4e80617e5831d46884abe824941b15c8a748ca5e0/vllm-0.8.2-cp38-abi3-manylinux1_x86_64.whl  
-# our implementation is based on vLLM 0.8.2, so we use this precompiled wheel to acclerate the installation
+export VLLM_PRECOMPILED_WHEEL_LOCATION=https://files.pythonhosted.org/packages/57/49/207364110b96d76139a4e80617e5831d46884abe824941b15c8a748ca5e0/vllm-0.8.2-cp38-abi3-manylinux1_x86_64.whl  # our implementation is based on vLLM 0.8.2, so we use this precompiled wheel to acclerate the installation
 pip install -e .
 ```
 
@@ -55,13 +48,3 @@ PYTHONPATH=src/ python src/run_proxythinker.py \
 ```
 
 For more details, refer to `scripts` to see other examples of running ProxyThinker with different models and datasets.
-
-### Evaluation 
-
-Use `math_eval.py` to run rule-based evaluation or gpt-based evaluation (by setting `--gpt_judge`) on answer files.
-
-```bash
-PYTHONPATH=src/ python src/math_eval.py --precomputed_json results/mathverse-testmini/Qwen2.5-VL-32B-Instruct_bboxed.jsonl --gpt_judge
-```
-
-
